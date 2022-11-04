@@ -21,3 +21,18 @@
 
 * Start the webapp to visualize the progress so far <br />
 ```npm run start``` 
+
+* Next create webassembly package from cpp<br />
+
+* The package for compiling C or C++ projects as webassembly is [Emscripten](https://emscripten.org/docs/introducing_emscripten/index.html) and its installation can be found [here](https://emscripten.org/docs/getting_started/downloads.html) <br />
+
+* Create the C++ directory, where the cpp sources will be placed <br />
+```$mkdir cpp && cd cpp``` <br />
+
+* Create new files for the application. Here is Calculator.h and Calculator.cpp <br />
+
+* Create new directory for writing the emscripten bindings <br />
+```$mkdir bindings && cd bindings``` <br />
+
+* Add bindingfile CalculatorBindings.cpp which will be used by emscripten to compile wasm files <br />
+
