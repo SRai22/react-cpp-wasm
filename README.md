@@ -36,3 +36,8 @@
 
 * Add bindingfile CalculatorBindings.cpp which will be used by emscripten to compile wasm files <br />
 
+* Compiling the cpp source into webassembly(wasm) and corresponding .js files using emscripten <br />
+```$emcc --bind bindings/CalculatorBindings.cpp -Icpp/ cpp/*.cpp -s WASM=1 -s MODULARIZE=1 -o Calculator.js -s LLD_REPORT_UNDEFINED  --no-entry``` <br />
+
+
+
